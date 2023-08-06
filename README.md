@@ -1,15 +1,17 @@
 ## Overview
 
-Time to refressh my 5 year old portfolio site...
+6 Years later it's time to refresh my portofolio site.
 
-Using: Next.js, TypeScript, and Tailwindcss
+This is an excuse to also play around with some of the new stuff. I'm planning to build with Next.js, TypeScript, Tailwind, and Docker.
 
-# Getting Started 
+# Getting Started
 
 ## Install
+
 `npm install`
 
-## Start Development environment 
+## Start Development environment
+
 ```bash
 npm run dev
 # or
@@ -27,7 +29,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Public Folder
 
 **Optional**
-The `/public` folder to sotre static assets such as images, fonts, etc.
+The `/public` folder to store static assets such as images, fonts, etc.
 
 ## Learn More
 
@@ -40,4 +42,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy
 
-Deploying to Dreamhost provider.
+Planning to deploy to Dreamhost which is my current provider... I might also explore deploy to Vercel or Netlify since I'm unemployeed and needing to save some cash... life.
+
+## TODOs
+
+- [ ] Add Resume page or Link to Resume
+- [ ] Add Blog
+- [ ] Skills Section
+- [ ] Timeline Section
+- [ ] Portfolio Section
