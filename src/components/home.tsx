@@ -8,18 +8,20 @@ export default function Home() {
       </h1>
       <section className='flex flex-col w-100 mb-20'>
         <span className='self-end text-sm text-emerald-400 uppercase font-mont'>
-          Ruby on Rails &bull; TypeScript &bull; Programmer
+          Developer &bull; Ruby on Rails &bull; TypeScript
         </span>
         <h2 className='ml-32 text-lg text-black'></h2>
         <p className='mt-8 uppercase'>
           I&apos;m a software developer from East Tennessee with{' '}
           <em>
-            4 years of professional
+            {' '}
+            4 years of professional{' '}
             <span className='text-rose-600'> Ruby on Rails</span> &amp;{' '}
-            <span className='text-amber-400'>JavaScript</span> experience
+            <span className='text-amber-400'>JavaScript</span> experience{' '}
           </em>
-          . In 2016 I decided that I wanted to change my life and do something
-          for a living that I&apos;m passionate about and love.
+          working in the fashion / appareal industry at Tiltworks, Inc. and a
+          background in the liqudation of new car dealership fixed assets at
+          auction.
         </p>
       </section>
 
