@@ -10,10 +10,14 @@ export default function Home() {
         </span>
         <h2 className='ml-32 text-lg text-black'></h2>
         <p className='mt-8 uppercase'>
-          I&apos;m a software developer from East Tennessee with 4 years of
-          professional Ruby on Rails experience. In 2016 I decided that I wanted
-          to change my life and do something for a living that I&apos;m
-          passionate about and love.
+          I&apos;m a software developer from East Tennessee with{' '}
+          <em>
+            4 years of professional
+            <span className='text-rose-600'> Ruby on Rails</span> &amp;{' '}
+            <span className='text-amber-400'>JavaScript</span> experience
+          </em>
+          . In 2016 I decided that I wanted to change my life and do something
+          for a living that I&apos;m passionate about and love.
         </p>
       </section>
 
