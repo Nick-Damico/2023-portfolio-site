@@ -1,10 +1,12 @@
+import Timeline from '@/components/timeline'
+
 export default function Home() {
   return (
     <main className='flex flex-wrap mt-28 px-4'>
       <h1 className='mt-20 text-4xl text-slate-100 text-700 fontMont font-bold'>
         Nicholas D&apos;Amico
       </h1>
-      <section className='flex flex-col w-100'>
+      <section className='flex flex-col w-100 mb-20'>
         <span className='self-end text-sm text-emerald-400 uppercase font-mont'>
           Ruby on Rails &bull; TypeScript &bull; Programmer
         </span>
@@ -21,15 +23,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className='w-100 md:w-1/2 px-4 mt-64'>
-        <h2>Time Line</h2>
-        <ol>
-          <li>Freelancing</li>
-          <li>Front-End Techdegree Team Treehouse</li>
-          <li>Flatiron Software Engineering Bootcamp</li>
-          <li>Tiltworks, Inc Junior Software Engineer</li>
-        </ol>
-      </section>
+      <Timeline />
 
       <section className='w-100 md:w-1/2 px-4 mt-8'>
         <h2>Portfolio</h2>
