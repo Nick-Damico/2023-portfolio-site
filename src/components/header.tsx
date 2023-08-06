@@ -8,7 +8,10 @@ export default function Footer() {
         strokeLinejoin='round'
         strokeMiterlimit='1.414'
       >
-        <path d='M200.058 186.517L0 0h400.116L200.058 186.517z' fill='black' />
+        <path
+          d='M200.058 186.517L0 0h400.116L200.058 186.517z'
+          className='fill-zinc-900'
+        />
         <clipPath id='a'>
           <path d='M221.087 20.612h80.037v57.756h-80.037z' />
         </clipPath>
