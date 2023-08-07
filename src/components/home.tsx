@@ -1,5 +1,6 @@
 import Timeline from '@/components/timeline'
 import Portfolio from '@/components/portfolio'
+import Blog from '@/components/blog'
 
 export default function Home() {
   return (
@@ -26,21 +27,9 @@ export default function Home() {
         </p>
       </section>
 
-      <Timeline />
-
-      <Portfolio />
-
-      <div className='w-100 md:w-1/2 px-4 mt-8'>
-        <div className='w-100'>
-          <section>
-            <h2>Blog</h2>
-          </section>
-
-          <section>
-            <h2 className='text-black'>Current Work</h2>
-          </section>
-        </div>
-      </div>
+      <Timeline title='Timeline' />
+      <Portfolio title='Portfolio' />
+      <Blog title='Blog' />
     </main>
   )
 }
