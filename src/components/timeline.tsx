@@ -1,6 +1,6 @@
 export default function Timeline({ title }: { title: string }) {
   return (
-    <section className='w-100'>
+    <section className='w-100 mb-6'>
       <h2 className='section-title'>{title}</h2>
       <ol className='space-y-2 border-l-2 border-emerald-400'>
         <li className='relative ml-3 before:absolute before:content-[""] before:w-3 before:h-3 before:rounded-full before:top-4 before:-left-[1.2rem] before:bg-emerald-400'>
