@@ -10,15 +10,16 @@ export default function Home() {
           Nicholas D&apos;Amico
         </h1>
         <span className='self-end text-sm text-emerald-400 uppercase font-mont'>
-          Developer &bull; Ruby on Rails &bull; TypeScript
+          Developer &bull; Ruby on Rails &bull; JavaScript
         </span>
       </div>
-      <section className='flex flex-col w-100 mb-20'>
+
+      <section className='flex flex-col w-100 max-w-md mb-20 lg:-mb-12'>
         <h2 className='ml-32 text-lg text-black'></h2>
         <p className='mt-8 uppercase'>
           I&apos;m a software developer from East Tennessee with{' '}
           <em>
-            4 years of professional{' '}
+            4+ years of professional{' '}
             <span className='text-rose-600'> Ruby on Rails</span> &amp;{' '}
             <span className='text-amber-400'>JavaScript</span> experience{' '}
           </em>
@@ -28,9 +29,11 @@ export default function Home() {
         </p>
       </section>
 
-      <Timeline title='Timeline' />
-      <Portfolio title='Portfolio' />
-      <Blog title='Blog' />
+      <div className='grid grid-cols-2 gap-2'>
+        <Timeline title='Timeline' />
+        <Portfolio title='Portfolio' />
+        <Blog title='Blog' />
+      </div>
     </main>
   )
 }

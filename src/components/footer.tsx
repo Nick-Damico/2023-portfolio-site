@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='bg-white bg-zinc-900 border-emerald-500 border-t-2 p-4'>
+    <footer className='w-full bg-white bg-zinc-900 border-emerald-500 border-t-2 p-4'>
       <div className='text-center'>
         <span className='text-sm text-gray-500'>
           © 2016{' '}
