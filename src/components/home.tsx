@@ -4,7 +4,7 @@ import Blog from '@/components/blog'
 
 export default function Home() {
   return (
-    <main className='flex flex-wrap mt-28 px-4'>
+    <main className='flex flex-wrap mt-28 mb-auto px-4'>
       <h1 className='mt-20 text-4xl text-slate-100 text-700 fontMont font-bold'>
         Nicholas D&apos;Amico
       </h1>

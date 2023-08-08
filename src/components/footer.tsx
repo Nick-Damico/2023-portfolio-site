@@ -1,21 +1,22 @@
 export default function Footer() {
   return (
     <footer className='bg-white bg-zinc-900 border-emerald-500 border-t-2 p-4'>
-      <div className='sm:flex sm:items-center'>
-        <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
+      <div className='text-center'>
+        <span className='text-sm text-gray-500'>
           © 2016{' '}
           <a href='https://nicholasdamico.net/' className='hover:underline'>
             NicholasDamico.net
           </a>
           . All Rights Reserved.
         </span>
-        <div className='flex mt-4 space-x-5 justify-center'>
+        <nav className='flex mt-2 space-x-2.5 justify-center'>
           <a
-            href='#'
+            href='https://github.com/Nick-Damico'
+            target='_blank'
             className='text-gray-500 hover:text-gray-900 dark:hover:text-white'
           >
             <svg
-              className='w-4 h-4'
+              className='w-6 h-6'
               aria-hidden='true'
               xmlns='http://www.w3.org/2000/svg'
               fill='currentColor'
@@ -29,26 +30,32 @@ export default function Footer() {
             </svg>
             <span className='sr-only'>GitHub account</span>
           </a>
+
           <a
-            href='#'
+            href='https://www.linkedin.com/in/nick-damico/'
+            target='_blank'
             className='text-gray-500 hover:text-gray-900 dark:hover:text-white'
           >
             <svg
-              className='w-4 h-4'
+              className='w-6 h-6'
               aria-hidden='true'
               xmlns='http://www.w3.org/2000/svg'
               fill='currentColor'
-              viewBox='0 0 20 17'
+              viewBox='0 0 128 128'
             >
               <path
                 fillRule='evenodd'
-                d='M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z'
-                clipRule='evenodd'
-              />
+                fill='currentColor'
+                d='M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z'
+              ></path>
+              <path
+                fill='#fff'
+                d='M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z'
+              ></path>
             </svg>
-            <span className='sr-only'>Twitter page</span>
+            <span className='sr-only'>LinkedIn Page</span>
           </a>
-        </div>
+        </nav>
       </div>
     </footer>
   )
