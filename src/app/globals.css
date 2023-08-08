@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .section-title {
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: theme('fontSize.2xl');
+  }
+}
