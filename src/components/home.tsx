@@ -4,19 +4,20 @@ import Blog from '@/components/blog'
 
 export default function Home() {
   return (
-    <main className='flex flex-wrap mt-28 mb-auto px-4'>
-      <h1 className='mt-20 text-4xl text-slate-100 text-700 fontMont font-bold'>
-        Nicholas D&apos;Amico
-      </h1>
-      <section className='flex flex-col w-100 mb-20'>
+    <main className='flex flex-col mt-28 mb-auto px-4'>
+      <div className='flex flex-col max-w-sm'>
+        <h1 className='mt-10 text-4xl text-slate-100 text-700 fontMont font-bold'>
+          Nicholas D&apos;Amico
+        </h1>
         <span className='self-end text-sm text-emerald-400 uppercase font-mont'>
           Developer &bull; Ruby on Rails &bull; TypeScript
         </span>
+      </div>
+      <section className='flex flex-col w-100 mb-20'>
         <h2 className='ml-32 text-lg text-black'></h2>
         <p className='mt-8 uppercase'>
           I&apos;m a software developer from East Tennessee with{' '}
           <em>
-            {' '}
             4 years of professional{' '}
             <span className='text-rose-600'> Ruby on Rails</span> &amp;{' '}
             <span className='text-amber-400'>JavaScript</span> experience{' '}
