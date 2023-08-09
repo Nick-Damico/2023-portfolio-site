@@ -33,4 +33,16 @@ body {
     text-transform: uppercase;
     font-size: theme('fontSize.2xl');
   }
+
+  .dot-pattern {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    background-image: radial-gradient(
+        rgba(9, 9, 11, 1) 0.75px,
+        transparent 0.75px
+      ),
+      radial-gradient(rgba(9, 9, 0, 1) 0.75px, rgba(255, 255, 255, 0) 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+  }
 }

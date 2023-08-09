@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className='flex flex-col mt-28 mb-auto px-4'>
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-2 z-50'>
         <div className='relative col-span-2 max-w-sm md:max-w-md'>
           <div className='flex flex-col'>
             <h1 className='mt-10 text-6xl text-slate-100 text-700 font-mont font-medium z-50'>

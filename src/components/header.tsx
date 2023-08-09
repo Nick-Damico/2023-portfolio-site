@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <header>
+    <header className='z-50'>
       <svg
         className='w-72 absolute -left-[143px]'
         viewBox='0 0 401 187'
