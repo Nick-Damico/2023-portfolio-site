@@ -1,14 +1,9 @@
+import Image from 'next/image'
+
 export default function Footer() {
   return (
-    <footer className='w-full bg-white bg-zinc-900 border-emerald-500 border-t-2 p-4'>
+    <footer className='w-full p-4 z-50 bg-zinc-900 border-emerald-500 border-t-2'>
       <div className='text-center'>
-        <span className='text-sm text-gray-500'>
-          © 2016{' '}
-          <a href='https://nicholasdamico.net/' className='hover:underline'>
-            NicholasDamico.net
-          </a>
-          . All Rights Reserved.
-        </span>
         <nav className='flex mt-2 space-x-1 justify-center'>
           <a
             href='https://github.com/Nick-Damico'
@@ -55,7 +50,35 @@ export default function Footer() {
             </svg>
             <span className='sr-only'>LinkedIn Page</span>
           </a>
+          <a href='relative p-1 text-gray-500'>
+            <svg
+              className='w-6 mt-1 h-6 fill-gray-500'
+              aria-hidden='true'
+              xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 512 512'
+            >
+              <path d='M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z' />
+            </svg>
+          </a>
         </nav>
+        <span className='text-sm text-gray-500'>
+          © 2016{' '}
+          <a href='https://nicholasdamico.net/' className='hover:underline'>
+            NicholasDamico.net
+          </a>
+          . All Rights Reserved.
+        </span>
+        <span className='text-sm text-gray-400'>
+          {' | '}
+          Built with{' '}
+          <a
+            className='text-emerald-400'
+            href='https://nextjs.org/'
+            target='_blank'
+          >
+            Next.js
+          </a>
+        </span>
       </div>
     </footer>
   )
