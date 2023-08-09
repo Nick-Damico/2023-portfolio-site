@@ -1,20 +1,31 @@
 import Timeline from '@/components/timeline'
 import Portfolio from '@/components/portfolio'
 import Blog from '@/components/blog'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className='flex flex-col mt-28 mb-auto px-4'>
-      <div className='flex flex-col max-w-sm'>
-        <h1 className='mt-10 text-4xl text-slate-100 text-700 fontMont font-bold'>
-          Nicholas D&apos;Amico
-        </h1>
-        <span className='self-end text-sm text-emerald-400 uppercase font-mont'>
-          Developer &bull; Ruby on Rails &bull; JavaScript
-        </span>
+      <div className='relative max-w-sm md:max-w-md'>
+        <div className='flex flex-col'>
+          <h1 className='mt-10 text-6xl text-slate-100 text-700 font-mont font-medium z-50'>
+            Nick D&apos;Amico
+          </h1>
+          <span className='self-end text-sm text-emerald-400 uppercase font-mont z-50'>
+            Developer &bull; Ruby on Rails &bull; JavaScript
+          </span>
+        </div>
+        <Image
+          className='absolute rounded-full z-10 -scale-x-100 -top-10 right-0 md:-right-24 md:-top-20 border-4 border-emerald-400'
+          src='/profile.jpg'
+          alt='Profile picture of Nick Damico'
+          width={180}
+          height={180}
+        />
       </div>
 
-      <section className='flex flex-col w-100 max-w-md mb-20 lg:-mb-12'>
+      {/* TODO: add lg:-mb-12 back after skills section is complete */}
+      <section className='flex flex-col w-100 max-w-md mb-20'>
         <h2 className='ml-32 text-lg text-black'></h2>
         <p className='mt-8 uppercase'>
           I&apos;m a software developer from East Tennessee with{' '}
