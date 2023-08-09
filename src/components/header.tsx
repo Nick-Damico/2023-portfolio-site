@@ -22,11 +22,11 @@ export default function Footer() {
           />
         </g>
       </svg>
-      <nav className='flex justify-end text-black pt-3.5 px-4 space-x-2'>
+      <nav className='flex justify-end text-black pt-3 px-4 space-x-1'>
         <a
           href='https://github.com/Nick-Damico'
           target='_blank'
-          className='text-gray-500 hover:text-gray-900 dark:hover:text-white'
+          className='p-1 text-gray-500 hover:text-white'
         >
           <svg
             className='w-8 h-8'
@@ -47,7 +47,7 @@ export default function Footer() {
         <a
           href='https://www.linkedin.com/in/nick-damico/'
           target='_blank'
-          className='text-gray-500 hover:text-gray-900 dark:hover:text-white'
+          className='p-1 text-gray-500 hover:text-sky-500'
         >
           <svg
             className='w-8 h-8'

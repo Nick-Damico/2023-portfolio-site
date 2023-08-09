@@ -9,11 +9,11 @@ export default function Footer() {
           </a>
           . All Rights Reserved.
         </span>
-        <nav className='flex mt-2 space-x-2.5 justify-center'>
+        <nav className='flex mt-2 space-x-1 justify-center'>
           <a
             href='https://github.com/Nick-Damico'
             target='_blank'
-            className='text-gray-500 hover:text-gray-900 dark:hover:text-white'
+            className='p-1 text-gray-500 hover:text-white'
           >
             <svg
               className='w-6 h-6'
@@ -34,7 +34,7 @@ export default function Footer() {
           <a
             href='https://www.linkedin.com/in/nick-damico/'
             target='_blank'
-            className='text-gray-500 hover:text-gray-900 dark:hover:text-white'
+            className='p-1 text-gray-500 hover:text-sky-500'
           >
             <svg
               className='w-6 h-6'
