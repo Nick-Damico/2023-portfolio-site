@@ -20,6 +20,19 @@ yarn dev
 pnpm dev
 ```
 
+## Start Development environment with Docker
+
+```bash
+# Start Docker
+systemctl --user docker desktop
+
+# Start Docker container with compose
+docker compose -f docker-compose.dev.yml up --build
+
+# Stop Docker container and clean up
+docker compose -f docker-compose.dev.yml down --rmi all
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
