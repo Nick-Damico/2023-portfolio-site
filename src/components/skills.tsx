@@ -70,7 +70,7 @@ export default function Skills({ title }: { title: string }) {
   }
 
   return (
-    <section className='flex flex-col col-span-2 md:col-start-2 md:col-span-1 z-50'>
+    <section className='flex flex-col'>
       <h2 className='section-title'>{title}</h2>
       <div className='grid grid-cols-4 gap-2 w-3/4'>
         <div className='flex flex-col col-start-1 col-span-1'>

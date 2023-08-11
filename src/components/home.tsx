@@ -19,14 +19,27 @@ export default function Home() {
           <About />
         </div>
 
-        <Timeline title='Timeline' />
+        <div className='col-span-2 md:col-start-2 md:col-span-1 mb-6 z-50'>
+          <Timeline title='Timeline' />
+        </div>
       </div>
 
       <div className='grid grid-cols-2 gap-2'>
-        <QuouteBlock />
-        <Skills title='Skills' />
-        <Portfolio title='Portfolio' />
-        <Blog title='Blog' />
+        <div className='col-span-2 md:col-start-1 md:col-span-1 z-50 '>
+          <QuouteBlock />
+        </div>
+
+        <div className='col-span-2 md:col-start-2 md:col-span-1 z-50'>
+          <Skills title='Skills' />
+        </div>
+
+        <div className='col-span-2 md:col-span-1 z-50'>
+          <Portfolio title='Portfolio' />
+        </div>
+
+        <div className='col-span-2 md:col-span-1 '>
+          <Blog title='Blog' />
+        </div>
       </div>
     </main>
   )
