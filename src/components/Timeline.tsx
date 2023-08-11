@@ -12,7 +12,7 @@ export default function Timeline({ title }: { title: string }) {
       startDate: 'Mar 2017',
       endDate: 'Jan 2018',
       company: 'Flatiron Bootcamp',
-      title: 'Software Engineering'
+      title: 'Software Engineering Graduate'
     },
     {
       startDate: 'Sept 2016',
