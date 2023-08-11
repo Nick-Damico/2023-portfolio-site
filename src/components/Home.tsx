@@ -1,10 +1,10 @@
 import MainHeading from '@/components/MainHeading'
 import About from '@/components/About'
-import Timeline from '@/components/timeline'
-import QuouteBlock from './quote_block'
-import Skills from '@/components/skills'
-import Portfolio from '@/components/portfolio'
-import Blog from '@/components/blog'
+import Timeline from '@/components/Timeline'
+import QuouteBlock from './QuoteBlock'
+import Skills from '@/components/Skills'
+import Portfolio from '@/components/Portfolio'
+import Blog from '@/components/Blog'
 
 export default function Home() {
   return (
