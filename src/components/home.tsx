@@ -1,6 +1,7 @@
 import Timeline from '@/components/timeline'
 import Portfolio from '@/components/portfolio'
 import Blog from '@/components/blog'
+import QuouteBlock from './quote_block'
 import Skills from '@/components/skills'
 import Image from 'next/image'
 
@@ -42,11 +43,12 @@ export default function Home() {
           </p>
         </section>
 
-        <Skills title='Skills' />
+        <Timeline title='Timeline' />
       </div>
 
       <div className='grid grid-cols-2 gap-2'>
-        <Timeline title='Timeline' />
+        <QuouteBlock />
+        <Skills title='Skills' />
         <Portfolio title='Portfolio' />
         <Blog title='Blog' />
       </div>
