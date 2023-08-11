@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     fontFamily: {
       mont: ['var(--font-mont)'],
-      inter: ['var(--font-inter)']
+      inter: ['var(--font-inter)'],
+      amatic: ['var(--font-amatic)']
     },
     extend: {}
   },

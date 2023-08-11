@@ -1,9 +1,15 @@
 import './globals.css'
-import { Inter, Montserrat } from 'next/font/google'
+import { Inter, Montserrat, Amatic_SC } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter'
+})
+
+const amatic = Amatic_SC({
+  subsets: ['latin'],
+  variable: '--font-amatic',
+  weight: ['400', '700']
 })
 
 const mont = Montserrat({
@@ -23,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${mont.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${mont.variable} ${amatic.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
