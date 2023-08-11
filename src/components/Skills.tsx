@@ -1,8 +1,21 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
+import Skill from '@/components/skills/Skill'
 
 export default function Skills({ title }: { title: string }) {
-  const skills = {
+  type Skill = {
+    filename: string
+    altText: string
+  }
+  type Skills = {
+    /*
+      NOTE: Skills is using an index signature,
+            which means you can use any string
+            as a key to access an array of skills */
+    [category: string]: Skill[]
+  }
+
+  const skills: Skills = {
     languages: [
       {
         filename: 'html5-original.svg',
@@ -72,63 +85,32 @@ export default function Skills({ title }: { title: string }) {
   return (
     <section className='flex flex-col'>
       <h2 className='section-title'>{title}</h2>
-      <div className='grid grid-cols-4 gap-2 w-3/4'>
-        <div className='flex flex-col col-start-1 col-span-1'>
-          {skills.languages.map(
-            ({ filename, altText }, idx): ReactNode => (
-              <Image
-                key={idx}
-                className='mb-2'
-                src={`/${filename}`}
-                alt={altText}
-                width={40}
-                height={40}
-              />
-            )
-          )}
-        </div>
-        <div className='flex flex-col col-start-2 col-span-1'>
-          {skills.styling.map(
-            ({ filename, altText }, idx): ReactNode => (
-              <Image
-                key={idx}
-                className='mb-2'
-                src={`/${filename}`}
-                alt={altText}
-                width={40}
-                height={40}
-              />
-            )
-          )}
-        </div>
-        <div className='flex flex-col col-start-3 col-span-1'>
-          {skills.frameworks.map(
-            ({ filename, altText }, idx): ReactNode => (
-              <Image
-                key={idx}
-                className='mb-2'
-                src={`/${filename}`}
-                alt={altText}
-                width={40}
-                height={40}
-              />
-            )
-          )}
-        </div>
-        <div className='flex flex-col col-start-4 col-span-1'>
-          {skills.misc.map(
-            ({ filename, altText }, idx): ReactNode => (
-              <Image
-                key={idx}
-                className='mb-2'
-                src={`/${filename}`}
-                alt={altText}
-                width={40}
-                height={40}
-              />
-            )
-          )}
-        </div>
+      <div className='grid grid-cols-4 gap-2 w-3/4 m-auto justify-items'>
+        {Object.keys(skills).map((category, idx): ReactNode => {
+          return (
+            <div
+              key={`${category}-${idx}`}
+              className={`flex flex-col col-start-${
+                idx + 1
+              } col-span-1 items-center`}
+            >
+              {skills[category].map(
+                (
+                  { filename, altText }: { filename: string; altText: string },
+                  idx: number
+                ): ReactNode => (
+                  <Skill
+                    key={idx}
+                    imgSrc={`/${filename}`}
+                    imgAlt={altText}
+                    width={40}
+                    height={40}
+                  />
+                )
+              )}
+            </div>
+          )
+        })}
       </div>
     </section>
   )
