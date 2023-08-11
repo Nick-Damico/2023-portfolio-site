@@ -70,10 +70,10 @@ export default function Skills({ title }: { title: string }) {
   }
 
   return (
-    <section className='flex flex-col col-span-2 md:col-span-1'>
+    <section className='flex flex-col col-span-2 md:col-start-2 md:col-span-1 z-50'>
       <h2 className='section-title'>{title}</h2>
-      <div className='grid grid-cols-4 gap-2'>
-        <div className='flex flex-col col-start-1 col-span-1 items-center'>
+      <div className='grid grid-cols-4 gap-2 w-3/4'>
+        <div className='flex flex-col col-start-1 col-span-1'>
           {skills.languages.map(
             ({ filename, altText }, idx): ReactNode => (
               <Image
@@ -87,7 +87,7 @@ export default function Skills({ title }: { title: string }) {
             )
           )}
         </div>
-        <div className='flex flex-col col-start-2 col-span-1 items-center'>
+        <div className='flex flex-col col-start-2 col-span-1'>
           {skills.styling.map(
             ({ filename, altText }, idx): ReactNode => (
               <Image
@@ -101,7 +101,7 @@ export default function Skills({ title }: { title: string }) {
             )
           )}
         </div>
-        <div className='flex flex-col col-start-3 col-span-1 items-center'>
+        <div className='flex flex-col col-start-3 col-span-1'>
           {skills.frameworks.map(
             ({ filename, altText }, idx): ReactNode => (
               <Image
@@ -115,7 +115,7 @@ export default function Skills({ title }: { title: string }) {
             )
           )}
         </div>
-        <div className='flex flex-col col-start-4 col-span-1 items-center'>
+        <div className='flex flex-col col-start-4 col-span-1'>
           {skills.misc.map(
             ({ filename, altText }, idx): ReactNode => (
               <Image
