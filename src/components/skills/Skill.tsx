@@ -15,9 +15,9 @@ export default function Skill({
   height: number
 }): ReactNode {
   return (
-    <div className='flex flex-col col-start-1 col-span-1 items-center'>
+    <div className='flex flex-col col-start-1 col-span-1 items-center p-1 bg-zinc-900 border border-zinc-950'>
       <Image
-        className='mb-2'
+        className=''
         key={key}
         src={imgSrc}
         alt={imgAlt}

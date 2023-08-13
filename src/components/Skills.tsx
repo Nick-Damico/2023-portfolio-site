@@ -92,7 +92,7 @@ export default function Skills({ title }: { title: string }) {
               key={`${category}-${idx}`}
               className={`flex flex-col col-start-${
                 idx + 1
-              } col-span-1 items-center`}
+              } col-span-1 items-center space-y-3`}
             >
               {skills[category].map(
                 (
