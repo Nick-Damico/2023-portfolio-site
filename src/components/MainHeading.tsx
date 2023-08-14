@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ProfileImg from 'public/profile.jpg'
 
 export default function MainHeading() {
   return (
@@ -13,7 +14,7 @@ export default function MainHeading() {
       </div>
       <Image
         className='absolute rounded-full z-10 -scale-x-100 -top-12 sm:-top-20 md:-top-20 right-0 sm:-right-32 md:-right-32 border-4 border-emerald-400'
-        src='/profile.jpg'
+        src={ProfileImg}
         alt='Profile picture of Nick Damico'
         width={180}
         height={180}
