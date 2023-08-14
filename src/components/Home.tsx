@@ -2,7 +2,7 @@ import MainHeading from '@/components/MainHeading'
 import About from '@/components/About'
 import Timeline from '@/components/Timeline'
 import QuouteBlock from './QuoteBlock'
-import Skills from '@/components/Skills'
+import Skill from '@/components/Skill'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog'
 
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className='col-span-2 md:col-start-2 md:col-span-1 z-50'>
-          <Skills title='Skills' />
+          <Skill title='Skills' />
         </div>
 
         <div className='col-span-2 md:col-span-1 z-50'>
