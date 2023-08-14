@@ -1,23 +1,21 @@
 import { ReactNode } from 'react'
 import Image from 'next/image'
 
-export default function Event({
+export default function TimeLineItem({
   startDate,
   endDate,
   company,
   title,
-  imgSrc,
-  key
+  imgSrc
 }: {
   startDate: string
   endDate: string
   company: string
   title: string
   imgSrc: string
-  key: number
 }): ReactNode {
   return (
-    <li key={key} className='relative'>
+    <li className='relative'>
       <div className='absolute p-1 bg-emerald-400 rounded-full top-2.5 -left-[12px]'>
         <Image alt='' src={imgSrc} width={14} height={14} className='' />
       </div>
