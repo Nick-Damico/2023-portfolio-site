@@ -1,16 +1,16 @@
 'use client'
 
 import React, { ReactNode } from 'react'
-import skills, { Skill } from '@/components/skills/data'
+import skills, { Skill, Skills } from '@/components/skills/data'
 import SkillItem from '@/components/skills/SkillItem'
 
-export default function SkillList() {
+export default function SkillList({ data }: { data: Skills }) {
   const [selected, setSelected] = React.useState()
   const onMouseOver = () => {}
 
   return (
     <div className='grid grid-cols-4 gap-2 w-3/4 m-auto justify-items'>
-      {Object.keys(skills).map((category, idx): ReactNode => {
+      {Object.keys(data).map((category, idx): ReactNode => {
         return (
           <div
             key={category}
@@ -18,7 +18,7 @@ export default function SkillList() {
               idx + 1
             } col-span-1 items-center space-y-3`}
           >
-            {skills[category].map(
+            {data[category].map(
               ({ id, filename, altText }: Skill): ReactNode => (
                 <SkillItem
                   key={id}

@@ -3,7 +3,8 @@ export type Skill = {
   filename: string
   altText: string
 }
-type Skills = {
+
+export type Skills = {
   /*
       NOTE: Skills is using an index signature,
             which means you can use any string
