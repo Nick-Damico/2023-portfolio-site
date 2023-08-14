@@ -1,8 +1,8 @@
 'use client'
 
 import React, { ReactNode } from 'react'
-import skills from '@/components/skills/data'
-import Skill from '@/components/skills/Skill'
+import skills, { Skill } from '@/components/skills/data'
+import SkillItem from '@/components/skills/SkillItem'
 
 export default function SkillList({ title }: { title: string }) {
   const [selected, setSelected] = React.useState()
@@ -16,18 +16,15 @@ export default function SkillList({ title }: { title: string }) {
         {Object.keys(skills).map((category, idx): ReactNode => {
           return (
             <div
-              key={`${category}-${idx}`}
+              key={category}
               className={`flex flex-col col-start-${
                 idx + 1
               } col-span-1 items-center space-y-3`}
             >
               {skills[category].map(
-                (
-                  { filename, altText }: { filename: string; altText: string },
-                  idx: number
-                ): ReactNode => (
-                  <Skill
-                    key={idx}
+                ({ id, filename, altText }: Skill): ReactNode => (
+                  <SkillItem
+                    key={id}
                     imgSrc={`/${filename}`}
                     imgAlt={altText}
                     width={40}

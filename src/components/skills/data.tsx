@@ -1,4 +1,4 @@
-type Skill = {
+export type Skill = {
   id: string
   filename: string
   altText: string
