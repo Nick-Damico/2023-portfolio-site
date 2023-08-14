@@ -1,7 +1,7 @@
 'use client'
 
 import React, { ReactNode } from 'react'
-import skills, { Skill, Skills } from '@/components/skills/data'
+import { Skill, Skills } from '@/components/skills/data'
 import SkillItem from '@/components/skills/SkillItem'
 
 export default function SkillList({ data }: { data: Skills }) {
