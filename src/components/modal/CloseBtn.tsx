@@ -1,13 +1,9 @@
 import Image from 'next/image'
 import xIcon from 'public/xmark-solid.svg'
 
-export default function CloseBtn() {
+export default function CloseBtn({ onClick }: { onClick: Function }) {
   const handleClick = () => {
-    const dialog = document.getElementById('projectModal') as HTMLDialogElement
-
-    if (dialog) {
-      dialog.close()
-    }
+    onClick()
   }
 
   return (
