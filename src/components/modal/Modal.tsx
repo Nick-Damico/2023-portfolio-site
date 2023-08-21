@@ -10,11 +10,12 @@ export default function Modal({
   open,
   onOpenClick,
   onCloseClick,
-  onCloseClick
+  selected
 }: {
   open: boolean
   onOpenClick: Function
   onCloseClick: Function
+  selected: string | null
 }): ReactNode {
   const handleCloseClick = () => {
     onCloseClick()
@@ -44,7 +45,7 @@ export default function Modal({
               }}
             >
               <CloseBtn onClick={onCloseClick} />
-              <p>Modal Content here</p>
+              <h2>SELECTED PROJECT {selected}</h2>
             </motion.div>
           </BackDrop>
         )}
