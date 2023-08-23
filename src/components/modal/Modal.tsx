@@ -3,19 +3,19 @@
 import React, { ReactNode } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import BackDrop from '@/components/modal/BackDrop'
-import OpenBtn from '@/components/modal/OpenBtn'
 import CloseBtn from './CloseBtn'
+import { Project } from '@/components/portfolio/data'
+import Image from 'next/image'
 
 export default function Modal({
+  children,
   open,
-  onOpenClick,
-  onCloseClick,
-  selected
+  onCloseClick
 }: {
+  children: ReactNode
   open: boolean
-  onOpenClick: Function
   onCloseClick: Function
-  selected: string | null
+  // selected: Project | null
 }): ReactNode {
   const handleCloseClick = () => {
     onCloseClick()
@@ -25,11 +25,7 @@ export default function Modal({
     <>
       <AnimatePresence initial={false} mode='wait'>
         {open && (
-          <BackDrop
-            key='backDrop'
-            onCloseClick={handleCloseClick}
-            selected={selected}
-          >
+          <BackDrop key='backDrop' onCloseClick={handleCloseClick}>
             <motion.div
               key='modal'
               className='p-6 w-11/12 max-w-2xl h-1/2 rounded-md bg-emerald-600 z-50'
@@ -45,11 +41,10 @@ export default function Modal({
               }}
             >
               <CloseBtn onClick={onCloseClick} />
-              <h2>SELECTED PROJECT {selected}</h2>
+              {children}
             </motion.div>
           </BackDrop>
         )}
-        <OpenBtn onOpenClick={onOpenClick} />
       </AnimatePresence>
     </>
   )

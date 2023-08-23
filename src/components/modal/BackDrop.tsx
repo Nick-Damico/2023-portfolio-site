@@ -3,12 +3,10 @@ import { ReactNode } from 'react'
 
 export default function BackDrop({
   children,
-  onCloseClick,
-  selected
+  onCloseClick
 }: {
   children: ReactNode
   onCloseClick: Function
-  selected: string | null
 }) {
   const handleCloseClick = () => {
     onCloseClick()
