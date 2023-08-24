@@ -14,7 +14,6 @@ export default function Home() {
           <MainHeading />
         </div>
 
-        {/* TODO: add lg:-mb-12 back after skills section is complete */}
         <div className='col-span-2 md:col-span-1'>
           <About />
         </div>
