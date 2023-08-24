@@ -20,7 +20,7 @@ export default function ProjectList() {
   }
 
   return (
-    <div className='grid gap-1 grid-cols-2 grid-rows-2 box-border h-80'>
+    <div className='grid gap-2 md:gap-1 grid-col md:grid-cols-2 grid-rows-1 md:grid-rows-2 box-border w-full sm:max-w-md md:max-w-full mx-auto'>
       {projects.map(({ id, name, src }) => (
         <ProjectThumbnail
           key={id}

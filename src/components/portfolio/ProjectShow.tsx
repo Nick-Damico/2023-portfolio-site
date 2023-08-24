@@ -6,9 +6,9 @@ export default function ProjectShow({ project }: { project: Project }) {
   const { id, name, techList, info, src } = project
 
   return (
-    <section>
+    <section className='flex flex-col'>
       <Image className='pb-2' src={src} height={250} width={400} alt='' />
-      <div className='flex space-x-0.5 pb-4'>
+      <div className='flex gap-1 flex-wrap pb-4'>
         {techList.map((tech, idx) => (
           <img
             className=''
@@ -19,7 +19,12 @@ export default function ProjectShow({ project }: { project: Project }) {
         ))}
       </div>
       <h2 className='text-2xl pb-2'>{name}</h2>
-      <p> {info} </p>
+      <p className=''> {info} </p>
+
+      <div className='mt-auto border border-emerald-500'>
+        <button>Github</button>
+        <button>Video</button>
+      </div>
     </section>
   )
 }

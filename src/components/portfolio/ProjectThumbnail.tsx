@@ -13,17 +13,18 @@ export default function ProjectItem({
   onOpenClick: Function
   onSelectClick: Function
 }): ReactNode {
-  const handleSelectClick = (selected: string) => {
-    onSelectClick(selected)
+  const handleSelectClick = () => {
+    onSelectClick(id)
     onOpenClick()
   }
 
   return (
     <div
-      onClick={() => handleSelectClick(id)}
-      className='relative flex items-center justify-center hover:cursor-pointer'
+      onClick={handleSelectClick}
+      className='flex items-center justify-center hover:cursor-pointer'
     >
-      <Image fill src={img} quality={100} alt='HikeIt application' />
+      <img src={img} alt='' />
+      {/* <Image fill src={img} quality={100} alt='HikeIt application' /> */}
     </div>
   )
 }
