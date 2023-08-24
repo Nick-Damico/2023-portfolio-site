@@ -15,7 +15,7 @@ export default function BackDrop({
   return (
     <motion.div
       id='backDrop'
-      className='flex items-center justify-center absolute top-0 left-0 h-full w-full bg-zinc-950/75 z-10'
+      className='flex fixed items-center justify-center left-0 top-0 bottom-0 h-screen w-full bg-zinc-950/75 z-10'
       onClick={handleCloseClick}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
