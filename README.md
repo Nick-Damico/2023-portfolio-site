@@ -4,6 +4,13 @@
 
 This is an excuse to also play around with some of the new stuff. I'm planning to build with Next.js, TypeScript, Tailwind, and Docker.
 
+# Preview
+Work in Progress
+Home Page | Modal
+:-------------------------:|:-------------------------:
+![Screenshot from 2023-08-25 10-46-58](https://github.com/Nick-Damico/2023-portfolio-site/assets/19657584/d770d045-609f-44bc-962b-df854dc677f9) | ![Screenshot from 2023-08-25 10-50-57](https://github.com/Nick-Damico/2023-portfolio-site/assets/19657584/214823ac-bcaf-462b-bfc2-f06243b8c5fa)
+
+
 # Getting Started
 
 ## Install
