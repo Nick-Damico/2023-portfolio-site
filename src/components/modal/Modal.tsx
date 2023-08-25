@@ -27,7 +27,7 @@ export default function Modal({
         <BackDrop key='backDrop' onCloseClick={handleCloseClick}>
           <motion.div
             key='modal'
-            className='p-6 max-h-1/2 h-auto w-11/12 max-w-2xl rounded-md bg-emerald-600 z-50'
+            className='p-6 max-h-3/4 h-auto w-11/12 max-w-2xl rounded-md bg-emerald-600 z-50'
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
