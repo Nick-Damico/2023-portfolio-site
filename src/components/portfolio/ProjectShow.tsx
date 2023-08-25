@@ -3,7 +3,7 @@ import { Project } from './data'
 import { techIcons } from './data'
 
 export default function ProjectShow({ project }: { project: Project }) {
-  const { id, name, techList, info, src } = project
+  const { id, name, techList, info, src, githubSrc, youtubeSrc } = project
 
   return (
     <section className='flex flex-col'>
@@ -19,11 +19,29 @@ export default function ProjectShow({ project }: { project: Project }) {
         ))}
       </div>
       <h2 className='text-2xl pb-2'>{name}</h2>
-      <p className=''> {info} </p>
+      <p className='mb-8 md:mb-12'> {info} </p>
 
-      <div className='mt-auto border border-emerald-500'>
-        <button>Github</button>
-        <button>Video</button>
+      <div className='flex space-x-2'>
+        <a href={githubSrc} target='_blank' className='button'>
+          <Image
+            className=''
+            src='/github-original.svg'
+            height={16}
+            width={16}
+            alt='github'
+          />
+          <span className='ml-2'>Github</span>
+        </a>
+        <a href={youtubeSrc} target='_blank' className='button'>
+          <Image
+            className='fill-white'
+            src='/youtube.svg'
+            height={18}
+            width={18}
+            alt='github'
+          />
+          <span className='ml-2'>Demo</span>
+        </a>
       </div>
     </section>
   )
