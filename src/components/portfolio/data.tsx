@@ -4,6 +4,8 @@ export type Project = {
   src: string
   info: string
   techList: string[] //Display order
+  youtubeSrc?: string
+  githubSrc?: string
 }
 
 type TechIconMap = {
@@ -31,7 +33,9 @@ const projects: Project[] = [
       hikes witin the Smoky Mountain Naitonal Park. This application
       was built as my final project in the Ruby on Rails module at
       Flatiron. It was to show my understanding of the Rails framework.
-    `
+    `,
+    githubSrc: 'https://github.com/Nick-Damico/HikeIt',
+    youtubeSrc: 'https://youtu.be/oosxvn8fQUo'
   },
   {
     id: '1480b6a7-3582-45b7-9a9c-464db1fef357',
