@@ -30,14 +30,16 @@ export default function Modal({
             className='p-6 max-h-3/4 h-auto w-11/12 max-w-2xl rounded-md bg-emerald-600 z-50'
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -100 }}
-            transition={{
-              ease: 'linear',
-              damping: 25,
-              duration: 0.3,
-              type: 'spring'
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: 'linear',
+                damping: 25,
+                duration: 0.3
+              }
             }}
+            exit={{ opacity: 0, y: -100 }}
           >
             <CloseBtn onClick={onCloseClick} />
             {children}
