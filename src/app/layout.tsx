@@ -9,7 +9,7 @@ const inter = Inter({
 const amatic = Amatic_SC({
   subsets: ['latin'],
   variable: '--font-amatic',
-  weight: ['400', '700']
+  weight: '700'
 })
 
 const mont = Montserrat({
