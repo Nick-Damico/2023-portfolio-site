@@ -3,11 +3,11 @@ import { Project } from './data'
 import { techIcons } from './data'
 
 export default function ProjectShow({ project }: { project: Project }) {
-  const { id, name, techList, info, src, githubSrc, youtubeSrc } = project
+  const { id, name, techList, info, imgSrc, githubSrc, youtubeSrc } = project
 
   return (
     <section className='flex flex-col'>
-      <Image className='pb-2' src={src} height={250} width={400} alt='' />
+      <Image className='pb-2' src={imgSrc} height={250} width={400} alt='' />
       <div className='flex gap-1 flex-wrap pb-4'>
         {techList.map((tech, idx) => (
           <img

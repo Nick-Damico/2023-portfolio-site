@@ -1,7 +1,7 @@
 export type Project = {
   id: string
   name: string
-  src: string
+  imgSrc: string
   info: string
   techList: string[] //Display order
   youtubeSrc?: string
@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     id: 'db7f444a-86d1-4351-8b46-817c19087f43',
     name: 'HikeIt - Social Hiking Meetup App',
-    src: '/hikeit-app-full.jpg',
+    imgSrc: '/hikeit-app-full.jpg',
     techList: ['ruby', 'rails', 'javascript', 'bootstrap'],
     info: `
       HikeIt is a social meetup application for organizing
@@ -48,7 +48,7 @@ const projects: Project[] = [
   {
     id: '1480b6a7-3582-45b7-9a9c-464db1fef357',
     name: 'Gatsby JS',
-    src: '/shear-madness.jpg',
+    imgSrc: '/shear-madness.jpg',
     techList: ['gatsby', 'javascript', 'css'],
     info: `I was contracted by a local hair salon in Sevier County Shear Madness to
     build a website to attract more clientele. The owners had an outdated Wordpress website
@@ -59,7 +59,7 @@ const projects: Project[] = [
   {
     id: '0d588fc9-f621-4921-9ec5-df9e894f656f',
     name: 'Wordpress',
-    src: '/damico-auctions.jpg',
+    imgSrc: '/damico-auctions.jpg',
     techList: ['wordpress', 'php', 'javascript', 'css'],
     info: `
       DamicoAuctions.com is the offical website for my families auction company.
