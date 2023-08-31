@@ -4,6 +4,12 @@ type linkMap = {
 
 type TechBadgeMap = {
   [techName: string]: string
+}
+
+export type LinkIconMap = {
+  [techName: string]: string
+}
+
 export type Project = {
   id: string
   name: string
@@ -27,9 +33,6 @@ export const techIcons: TechBadgeMap = {
   ruby: 'https://img.shields.io/badge/Ruby-2356752?style=flat-square&logo=ruby&color=c93c32',
   rails:
     'https://img.shields.io/badge/Ruby_on_Rails-d13232?style=flat-square&logo=rubyonrails&color=d13232',
-  javascript:
-    'https://img.shields.io/badge/JavaScript-2e2d2d?style=flat-square&logo=javascript&color=2e2d2d',
-  php: 'https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white',
   wordpress:
     'https://img.shields.io/badge/Wordpress-21759B?style=flat-square&logo=wordpress'
 }
