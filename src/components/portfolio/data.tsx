@@ -1,3 +1,5 @@
+type TechBadgeMap = {
+  [techName: string]: string
 export type Project = {
   id: string
   name: string
@@ -8,18 +10,17 @@ export type Project = {
   githubSrc?: string
 }
 
-type TechIconMap = {
-  [tech: string]: string
-}
-
-export const techIcons: TechIconMap = {
+export const techIcons: TechBadgeMap = {
   bootstrap:
     'https://img.shields.io/badge/Bootstrap-834899?style=flat-square&logo=bootstrap&logoColor=white',
   css: 'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white',
   gatsby:
     'https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=gatsby&logoColor=white',
+  javascript:
+    'https://img.shields.io/badge/JavaScript-2e2d2d?style=flat-square&logo=javascript&color=2e2d2d',
   netlify:
     'https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white',
+  php: 'https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white',
   ruby: 'https://img.shields.io/badge/Ruby-2356752?style=flat-square&logo=ruby&color=c93c32',
   rails:
     'https://img.shields.io/badge/Ruby_on_Rails-d13232?style=flat-square&logo=rubyonrails&color=d13232',
