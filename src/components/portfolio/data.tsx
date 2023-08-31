@@ -1,3 +1,7 @@
+type linkMap = {
+  [techName: string]: string
+}
+
 type TechBadgeMap = {
   [techName: string]: string
 export type Project = {
@@ -6,8 +10,7 @@ export type Project = {
   imgSrc: string
   info: string
   techList: string[] //Display order
-  youtubeSrc?: string
-  githubSrc?: string
+  links?: linkMap[]
 }
 
 export const techIcons: TechBadgeMap = {
@@ -43,8 +46,10 @@ const projects: Project[] = [
       was built as my final project in the Ruby on Rails module at
       Flatiron. It was to show my understanding of the Rails framework.
     `,
-    githubSrc: 'https://github.com/Nick-Damico/HikeIt',
-    youtubeSrc: 'https://youtu.be/oosxvn8fQUo'
+    links: [
+      { type: 'github', href: 'https://github.com/Nick-Damico/HikeIt' },
+      { type: 'youtube', href: 'https://youtu.be/oosxvn8fQUo' }
+    ]
   },
   {
     id: '1480b6a7-3582-45b7-9a9c-464db1fef357',
@@ -54,8 +59,7 @@ const projects: Project[] = [
     info: `I was contracted by a local hair salon in Sevier County Shear Madness to
     build a website to attract more clientele. The owners had an outdated Wordpress website
     that was not ranking well on Google, and they feared the outdated site hurt business.
-    I worked closely to build a site that matched their style, displayed their talent, and drive 
-    new business.`
+    I worked closely to build a site that matched their style, displayed their talent, and drive new business.`
   },
   {
     id: '0d588fc9-f621-4921-9ec5-df9e894f656f',
@@ -66,8 +70,7 @@ const projects: Project[] = [
       DamicoAuctions.com is the offical website for my families auction company.
       We specialize in the appraisal and liquidation of automotive equipment and new car dealerships.
       This is a fully custom Wordpress website with custom auction events. It was built using PHP, JavaScript, and CSS. The 
-    `,
-    githubSrc: ''
+    `
   }
 ]
 
