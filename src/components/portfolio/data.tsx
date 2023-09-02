@@ -31,6 +31,7 @@ export const techIcons: TechBadgeMap = {
     'https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white',
   php: 'https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white',
   ruby: 'https://img.shields.io/badge/Ruby-2356752?style=flat-square&logo=ruby&color=c93c32',
+  rspec: 'https://img.shields.io/badge/RSpec-3bb8ed?logo=ruby&logoColor=ed3b59',
   rails:
     'https://img.shields.io/badge/Ruby_on_Rails-d13232?style=flat-square&logo=rubyonrails&color=d13232',
   wordpress:
@@ -73,6 +74,18 @@ const projects: Project[] = [
       DamicoAuctions.com is the offical website for my families auction company.
       We specialize in the appraisal and liquidation of automotive equipment and new car dealerships.
       This is a fully custom Wordpress website with custom auction events. It was built using PHP, JavaScript, and CSS. The 
+    `
+  },
+  {
+    id: '',
+    name: 'MasterMind CLI Game',
+    imgSrc: '',
+    techList: ['ruby', 'rspec'],
+    info: `
+      Master Mind CLI is a command-line interface (CLI) implementation of the popular
+      game Master Mind.  Test your code-breaking skills by attempting to guess the
+      secret pattern within the specified number of attempts. Have fun playing and mastering
+      the code-breaking challenge with Master Mind CLI!
     `
   }
 ]
