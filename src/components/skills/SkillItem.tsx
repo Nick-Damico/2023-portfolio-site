@@ -13,7 +13,7 @@ export default function SkillItem({
   height: number
 }): ReactNode {
   return (
-    <div className='flex flex-col col-start-1 col-span-1 items-center p-1 bg-zinc-900 border border-zinc-950'>
+    <div className='flex flex-col col-start-1 col-span-1 items-center p-1 bg-zinc-900 border border-zinc-950 hover:border-emerald-500'>
       <Image
         className=''
         src={imgSrc}
