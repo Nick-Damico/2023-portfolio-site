@@ -43,7 +43,7 @@ const projects: Project[] = [
     id: 'db7f444a-86d1-4351-8b46-817c19087f43',
     name: 'HikeIt - Social Hiking Meetup App',
     imgSrc: '/hikeit-app-full.jpg',
-    techList: ['ruby', 'rails', 'javascript', 'bootstrap'],
+    techList: ['ruby', 'rails', 'javascript', 'bootstrap', 'rspec'],
     info: `
       HikeIt is a social meetup application for organizing
       hikes witin the Smoky Mountain Naitonal Park. This application
