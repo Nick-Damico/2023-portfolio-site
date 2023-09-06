@@ -6,7 +6,13 @@ import Modal from '@/components/modal/Modal'
 import projects, { Project } from './data'
 import ProjectShow from './ProjectShow'
 
-export default function ProjectList() {
+export default function ProjectList({
+  onMouseOver,
+  onMouseOut
+}: {
+  onMouseOver: Function
+  onMouseOut: Function
+}) {
   const [selected, setSelected] = useState<Project | null>(null)
   const [modalOpen, setModalOpen] = useState(false)
   const open = () => setModalOpen(true)
@@ -21,14 +27,17 @@ export default function ProjectList() {
 
   return (
     <div className='grid gap-2 md:gap-1 grid-col md:grid-cols-2 grid-rows-1 md:grid-rows-2 box-border w-full sm:max-w-md md:max-w-full mx-auto'>
-      {projects.map(({ id, name, imgSrc }) => (
+      {projects.map(({ id, name, imgSrc, techList }) => (
         <ProjectThumbnail
           key={id}
           id={id}
           name={name}
           img={imgSrc}
+          techList={techList}
           onSelectClick={handleSelect}
           onOpenClick={open}
+          onMouseOver={onMouseOver}
+          onMouseOut={onMouseOut}
         />
       ))}
       {selected && (

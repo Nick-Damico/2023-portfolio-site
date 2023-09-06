@@ -4,9 +4,14 @@ import React, { ReactNode } from 'react'
 import { Skill, Skills } from '@/components/skills/data'
 import SkillItem from '@/components/skills/SkillItem'
 
-export default function SkillList({ data }: { data: Skills }) {
+export default function SkillList({
+  data,
+  activeSkills
+}: {
+  data: Skills
+  activeSkills: string[]
+}) {
   const [selected, setSelected] = React.useState()
-  const onMouseOver = () => {}
 
   return (
     <div className='grid grid-cols-4 gap-2 w-3/4 m-auto justify-items'>
@@ -19,13 +24,14 @@ export default function SkillList({ data }: { data: Skills }) {
             } col-span-1 items-center space-y-3`}
           >
             {data[category].map(
-              ({ id, filename, altText }: Skill): ReactNode => (
+              ({ id, name, filename, altText }: Skill): ReactNode => (
                 <SkillItem
                   key={id}
                   imgSrc={`/${filename}`}
                   imgAlt={altText}
                   width={40}
                   height={40}
+                  active={activeSkills.includes(name)}
                 />
               )
             )}
