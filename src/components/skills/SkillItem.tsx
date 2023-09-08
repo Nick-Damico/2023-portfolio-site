@@ -15,12 +15,12 @@ export default function SkillItem({
   active: boolean
 }): ReactNode {
   const activeClass = () => {
-    return active ? 'border-emerald-500' : 'border-zinc-950'
+    return active ? 'border-emerald-500 scale-110' : 'border-zinc-950'
   }
 
   return (
     <div
-      className={`flex flex-col col-start-1 col-span-1 items-center p-1 bg-zinc-900 border ${activeClass()}`}
+      className={`flex flex-col col-start-1 col-span-1 items-center p-1 bg-zinc-900 border transition-all ease-in-out duration-500 ${activeClass()}`}
     >
       <Image
         className=''
