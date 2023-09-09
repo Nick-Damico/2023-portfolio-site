@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { LinkIconMap } from './data'
 import github from '/public/github-original.svg'
 import youtube from '/public/youtube.svg'
+import live from '/public/tower-broadcast-solid.svg'
 
 export default function ProjectLink({
   type,
@@ -16,7 +17,8 @@ export default function ProjectLink({
 
   const linkIconMap: LinkIconMap = {
     github,
-    youtube
+    youtube,
+    live
   }
 
   const linkIcon = (type: string) => {
