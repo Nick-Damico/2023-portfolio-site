@@ -70,7 +70,7 @@ const skills: Skills = {
     },
     {
       id: '980ee523-e16c-48f3-b9a2-2ae2c3c375a2',
-      name: 'boostrap',
+      name: 'bootstrap',
       filename: 'bootstrap-plain.svg',
       altText: 'Bootstrap'
     },
