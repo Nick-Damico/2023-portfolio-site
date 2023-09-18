@@ -23,6 +23,9 @@ export const techIcons: TechBadgeMap = {
   bootstrap:
     'https://img.shields.io/badge/Bootstrap-834899?style=flat-square&logo=bootstrap&logoColor=white',
   css: 'https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white',
+  docker:
+    'https://img.shields.io/badge/docker-00000?style=flat-square&logo=docker&color=1f1e1e',
+
   gatsby:
     'https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=gatsby&logoColor=white',
   javascript:
@@ -104,6 +107,24 @@ const projects: Project[] = [
         href: 'https://nick-damico.github.io/Proj.-7-Interactive-Video-Player'
       }
     ]
+  },
+  {
+    id: '',
+    name: 'MasterMind CLI Game',
+    imgSrc: '/master_mind_cli.png',
+    techList: ['ruby', 'rspec', 'docker'],
+    info: `
+      Master Mind CLI is a command-line interface (CLI) implementation of the popular
+      game Master Mind.  Test your code-breaking skills by attempting to guess the
+      secret pattern within the specified number of attempts. Have fun playing and mastering
+      the code-breaking challenge with Master Mind CLI!
+    `,
+    links: [
+      {
+        type: 'github',
+        href: 'https://github.com/Nick-Damico/ruby-master-mind'
+      }
+    ]
   }
   // {
   //   id: '1480b6a7-3582-45b7-9a9c-464db1fef357',
@@ -126,18 +147,6 @@ const projects: Project[] = [
   //     This is a fully custom Wordpress website with custom auction events. It was built using PHP, JavaScript, and CSS. The
   //   `
   // },
-  // {
-  //   id: '',
-  //   name: 'MasterMind CLI Game',
-  //   imgSrc: '',
-  //   techList: ['ruby', 'rspec'],
-  //   info: `
-  //     Master Mind CLI is a command-line interface (CLI) implementation of the popular
-  //     game Master Mind.  Test your code-breaking skills by attempting to guess the
-  //     secret pattern within the specified number of attempts. Have fun playing and mastering
-  //     the code-breaking challenge with Master Mind CLI!
-  //   `
-  // }
 ]
 
 export default projects
