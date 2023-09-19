@@ -56,10 +56,12 @@ const projects: Project[] = [
       'html'
     ],
     info: `
-      HikeIt is a social meetup application for organizing
-      hikes witin the Smoky Mountain Naitonal Park. This application
-      was built as my final project in the Ruby on Rails module at
-      Flatiron. It was to show my understanding of the Rails framework.
+      <p>
+        HikeIt is a social meetup application for organizing
+        hikes witin the Smoky Mountain Naitonal Park. This application
+        was built as my final project in the Ruby on Rails module at
+        Flatiron. It was to show my understanding of the Rails framework.
+      </p>
     `,
     links: [
       { type: 'github', href: 'https://github.com/Nick-Damico/HikeIt' },
@@ -72,9 +74,11 @@ const projects: Project[] = [
     imgSrc: '/inter-photo-full.jpg',
     techList: ['html', 'css', 'javascript', 'github'],
     info: `
-      This project was part of the Treehouse Front End Techdegree program.
-      The objective of this project was to use HTML5 and CSS to build a responsive photo gallery.
-      JavaScript was utilitized to add a modal pop-up and image carousel with text search filtering.
+      <p>
+        This project was part of the Treehouse Front End Techdegree program.
+        The objective of this project was to use HTML5 and CSS to build a responsive photo gallery.
+        JavaScript was utilitized to add a modal pop-up and image carousel with text search filtering.
+      </p>
     `,
     links: [
       {
@@ -93,9 +97,11 @@ const projects: Project[] = [
     imgSrc: '/video-player-full.jpg',
     techList: ['html', 'css', 'javascript', 'github'],
     info: `
-      This project showcases an HTML5 video player built using JavaScript and the 
-      HTML5 Video API. The goal of this project was to create an interactive video 
-      player with custom controls that synchronizes the video playback with a transcript.
+      <p>
+        This project showcases an HTML5 video player built using JavaScript and the 
+        HTML5 Video API. The goal of this project was to create an interactive video 
+        player with custom controls that synchronizes the video playback with a transcript.
+      </p>
     `,
     links: [
       {
@@ -113,11 +119,13 @@ const projects: Project[] = [
     name: 'MasterMind CLI Game',
     imgSrc: '/master_mind_cli.png',
     techList: ['ruby', 'rspec', 'docker'],
-    info: `
-      Master Mind CLI is a command-line interface (CLI) implementation of the popular
-      game Master Mind.  Test your code-breaking skills by attempting to guess the
-      secret pattern within the specified number of attempts. Have fun playing and mastering
-      the code-breaking challenge with Master Mind CLI!
+    info: ` 
+      <p>
+        Master Mind CLI is a command-line interface (CLI) implementation of the popular
+        game Master Mind. Developed following a strict TDD approach using Ruby and RSpec. Test your code-breaking skills by attempting to guess the
+        secret pattern within the specified number of attempts. Have fun playing and mastering
+        the code-breaking challenge with Master Mind CLI!
+      </p>
     `,
     links: [
       {

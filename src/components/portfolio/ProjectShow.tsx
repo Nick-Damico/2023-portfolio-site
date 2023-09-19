@@ -15,7 +15,10 @@ export default function ProjectShow({ project }: { project: Project }) {
         ))}
       </div>
       <h2 className='text-2xl pb-2'>{name}</h2>
-      <p className='mb-8 md:mb-12'> {info} </p>
+      <div
+        className='mb-8 md:mb-12'
+        dangerouslySetInnerHTML={{ __html: info }}
+      ></div>
 
       <div className='flex space-x-2'>
         {links &&
