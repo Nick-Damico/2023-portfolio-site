@@ -15,7 +15,7 @@ export type Project = {
   name: string
   imgSrc: string
   info: string
-  techList: string[] //Display order
+  techList: string[]
   links?: linkMap[]
 }
 
@@ -134,27 +134,6 @@ const projects: Project[] = [
       }
     ]
   }
-  // {
-  //   id: '1480b6a7-3582-45b7-9a9c-464db1fef357',
-  //   name: 'Gatsby JS',
-  //   imgSrc: '/shear-madness.jpg',
-  //   techList: ['gatsby', 'javascript', 'css'],
-  //   info: `I was contracted by a local hair salon in Sevier County Shear Madness to
-  //   build a website to attract more clientele. The owners had an outdated Wordpress website
-  //   that was not ranking well on Google, and they feared the outdated site hurt business.
-  //   I worked closely to build a site that matched their style, displayed their talent, and drive new business.`
-  // },
-  // {
-  //   id: '0d588fc9-f621-4921-9ec5-df9e894f656f',
-  //   name: 'Wordpress',
-  //   imgSrc: '/damico-auctions.jpg',
-  //   techList: ['wordpress', 'php', 'javascript', 'css'],
-  //   info: `
-  //     DamicoAuctions.com is the offical website for my families auction company.
-  //     We specialize in the appraisal and liquidation of automotive equipment and new car dealerships.
-  //     This is a fully custom Wordpress website with custom auction events. It was built using PHP, JavaScript, and CSS. The
-  //   `
-  // },
 ]
 
 export default projects
