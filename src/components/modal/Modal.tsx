@@ -4,8 +4,6 @@ import React, { ReactNode } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import BackDrop from '@/components/modal/BackDrop'
 import CloseBtn from './CloseBtn'
-import { Project } from '@/components/portfolio/data'
-import Image from 'next/image'
 
 export default function Modal({
   children,
@@ -15,7 +13,6 @@ export default function Modal({
   children: ReactNode
   open: boolean
   onCloseClick: Function
-  // selected: Project | null
 }): ReactNode {
   const handleCloseClick = () => {
     onCloseClick()
