@@ -27,12 +27,16 @@ export default function ProjectItem({
     onMouseOver(techList)
   }
 
+  const handleOnMouseOut = () => {
+    onMouseOut()
+  }
+
   return (
     <div
       onClick={handleSelectClick}
       className='flex items-center justify-center hover:cursor-pointer'
       onMouseOver={handleHover}
-      onMouseOut={() => onMouseOut()}
+      onMouseOut={handleOnMouseOut}
     >
       <img src={img} alt='' />
       {/* <Image fill src={img} quality={100} alt='HikeIt application' /> */}
