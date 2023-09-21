@@ -38,8 +38,7 @@ export default function ProjectItem({
       onMouseOver={handleHover}
       onMouseOut={handleOnMouseOut}
     >
-      <img src={img} alt='' />
-      {/* <Image fill src={img} quality={100} alt='HikeIt application' /> */}
+      <img src={img} alt='' className='w-full' />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { Project } from './data'
 import { techIcons } from './data'
 
 export default function ProjectShow({ project }: { project: Project }) {
-  const { id, name, techList, info, imgSrc, links } = project
+  const { name, techList, info, imgSrc, links } = project
 
   return (
     <section className='flex flex-col'>
