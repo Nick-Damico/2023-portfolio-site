@@ -18,6 +18,7 @@ export default function MainHeading() {
         alt='Profile picture of Nick Damico'
         width={180}
         height={180}
+        placeholder='blur'
       />
     </div>
   )
