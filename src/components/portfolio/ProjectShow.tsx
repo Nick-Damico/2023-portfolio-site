@@ -22,12 +22,8 @@ export default function ProjectShow({ project }: { project: Project }) {
 
       <div className='flex space-x-2'>
         {links &&
-          links.map((techLink) => (
-            <ProjectLink
-              key={techLink.type}
-              type={techLink.type}
-              href={techLink.href}
-            />
+          links.map(({ type, href }) => (
+            <ProjectLink key={type} type={type} href={href} />
           ))}
       </div>
     </section>
