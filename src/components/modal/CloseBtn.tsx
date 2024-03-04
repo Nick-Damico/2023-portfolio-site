@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import xIcon from 'public/xmark-solid.svg'
 
 export default function CloseBtn({ onClick }: { onClick: Function }) {
   const handleClick = () => {
@@ -15,7 +14,7 @@ export default function CloseBtn({ onClick }: { onClick: Function }) {
       >
         <Image
           className='p-1 rounded'
-          src={xIcon}
+          src='xmark-solid.svg'
           width={28}
           height={28}
           alt=''
