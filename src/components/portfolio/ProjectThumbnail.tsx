@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import Image from 'next/image'
 
 export default function ProjectItem({
   id,
@@ -34,11 +35,11 @@ export default function ProjectItem({
   return (
     <div
       onClick={handleSelectClick}
-      className='flex items-center justify-center hover:cursor-pointer'
+      className='flex relative w-full md:w-1/2 h-[200px]  items-center justify-center hover:cursor-pointer bg-red-400 overflow-hidden'
       onMouseOver={handleHover}
       onMouseOut={handleOnMouseOut}
     >
-      <img src={img} alt='' className='w-full' />
+      <Image fill src={img} alt='' className='object-cover' />
     </div>
   )
 }

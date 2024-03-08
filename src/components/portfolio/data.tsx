@@ -38,12 +38,14 @@ export const techIcons: TechBadgeMap = {
   rails:
     'https://img.shields.io/badge/Ruby_on_Rails-d13232?style=flat-square&logo=rubyonrails&color=d13232',
   wordpress:
-    'https://img.shields.io/badge/Wordpress-21759B?style=flat-square&logo=wordpress'
+    'https://img.shields.io/badge/Wordpress-21759B?style=flat-square&logo=wordpress',
+  tailwindcss:
+    'https://img.shields.io/badge/Tailwind_CSS-0F172A?style=flat-square&logo=tailwind-css&logoColor=38BDF8'
 }
 
 const projects: Project[] = [
   {
-    id: 'db7f444a-86d1-4351-8b46-817c19087f43',
+    id: crypto.randomUUID(),
     name: 'HikeIt - Social Hiking Meetup App',
     imgSrc: '/hikeit-app-full.jpg',
     techList: [
@@ -56,11 +58,17 @@ const projects: Project[] = [
       'html'
     ],
     info: `
-      <p>
-        HikeIt is a social meetup application for organizing
-        hikes witin the Smoky Mountain Naitonal Park. This application
-        was built as my final project in the Ruby on Rails module at
-        Flatiron. It was to show my understanding of the Rails framework.
+      <p class='max-w-prose mb-2'>
+        <span class='font-bold'>HikeIt</span> is a social meetup application for organizing
+        hikes witin the Smoky Mountain Naitonal Park.
+        This application was built as my final project in the Ruby on Rails module at
+        Flatiron.
+      </p>
+
+      <p class='max-w-prose'>
+        <span class='font-bold'>HikeIt</span> was built with Ruby on Rails 5.2. It utilizes Devise and OAuth
+        for user authentication, RSpec for following TDD best practices, and jQuery and JavaScript for user 
+        interactions. This app is no longer online, but the YouTube link below provides a brief walk-through.
       </p>
     `,
     links: [
@@ -68,36 +76,73 @@ const projects: Project[] = [
       { type: 'youtube', href: 'https://youtu.be/oosxvn8fQUo' }
     ]
   },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: 'Responsive Image Gallery',
+  //   imgSrc: '/inter-photo-full.jpg',
+  //   techList: ['html', 'css', 'javascript', 'github'],
+  //   info: `
+  //     <p class='max-w-prose'>
+  //       This project was part of the Treehouse Front End Techdegree program.
+  //       The objective of this project was to use HTML5 and CSS to build a responsive photo gallery.
+  //       JavaScript was utilitized to add a modal pop-up and image carousel with text search filtering.
+  //     </p>
+  //   `,
+  //   links: [
+  //     {
+  //       type: 'github',
+  //       href: 'https://github.com/Nick-Damico/Proj.-4-Interactive-Photo-Gallery'
+  //     },
+  //     {
+  //       type: 'live',
+  //       href: 'https://nick-damico.github.io/Proj.-4-Interactive-Photo-Gallery/'
+  //     }
+  //   ]
+  // },
   {
-    id: 'd09d4cd3-900e-4302-ace8-66d21e70d028',
-    name: 'Responsive Image Gallery',
-    imgSrc: '/inter-photo-full.jpg',
-    techList: ['html', 'css', 'javascript', 'github'],
+    id: crypto.randomUUID(),
+    name: 'TruckingNexus',
+    imgSrc: '/trucking-nexus-thumb.png',
+    techList: [
+      'rails',
+      'ruby',
+      'javascript',
+      'html',
+      'css',
+      'tailwindcss',
+      'rspec',
+      'docker',
+      'github'
+    ],
     info: `
-      <p>
-        This project was part of the Treehouse Front End Techdegree program.
-        The objective of this project was to use HTML5 and CSS to build a responsive photo gallery.
-        JavaScript was utilitized to add a modal pop-up and image carousel with text search filtering.
+      <p class='max-w-prose mb-2'>
+      <b>TruckingNexus</b> is a Ruby on Rails application developed while attending CDL school in October 2024.
+      It was primarily designed as a testing solution that prepares students for taking the state CDL written exams. In addtion to testing, TruckingNexus also provides
+      users with the ability to review companies and CDL schools.
+      </p>
+      <p class='max-w-prose'>
+      Built with Ruby on Rails 7, Active Storage with AWS, RSpec, and Stimulus, while taking full advantage of Turbo's features. Deployment is
+      handled using Fly.io and Docker.
       </p>
     `,
     links: [
       {
         type: 'github',
-        href: 'https://github.com/Nick-Damico/Proj.-4-Interactive-Photo-Gallery'
+        href: 'https://github.com/Nick-Damico/truckingnexus'
       },
       {
         type: 'live',
-        href: 'https://nick-damico.github.io/Proj.-4-Interactive-Photo-Gallery/'
+        href: 'https://trucking-nexus.fly.dev/'
       }
     ]
   },
   {
-    id: '9fae7a83-e40e-41f1-99e1-b67eff891058',
+    id: crypto.randomUUID(),
     name: 'Interactive Video Player',
     imgSrc: '/video-player-full.jpg',
     techList: ['html', 'css', 'javascript', 'github'],
     info: `
-      <p>
+      <p class='max-w-prose'>
         This project showcases an HTML5 video player built using JavaScript and the 
         HTML5 Video API. The goal of this project was to create an interactive video 
         player with custom controls that synchronizes the video playback with a transcript.
@@ -115,14 +160,18 @@ const projects: Project[] = [
     ]
   },
   {
-    id: '',
+    id: crypto.randomUUID(),
     name: 'MasterMind CLI Game',
     imgSrc: '/master_mind_cli.png',
     techList: ['ruby', 'rspec', 'docker'],
     info: ` 
-      <p>
-        Master Mind CLI is a command-line interface (CLI) implementation of the popular
-        game Master Mind. Developed following a strict TDD approach using Ruby and RSpec. Test your code-breaking skills by attempting to guess the
+      <p class='max-w-prose mb-2'>
+        <span class='font-bold'>Master Mind CLI</span> is a command-line interface implementation of the popular
+        game Master Mind. Developed following a strict TDD approach using Ruby and RSpec.
+      </p>
+        
+      <p class='max-w-prose'>
+        Test your code-breaking skills by attempting to guess the
         secret pattern within the specified number of attempts. Have fun playing and mastering
         the code-breaking challenge with Master Mind CLI!
       </p>

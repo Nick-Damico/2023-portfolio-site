@@ -26,7 +26,7 @@ export default function ProjectList({
   }
 
   return (
-    <div className='grid gap-2 md:gap-1 grid-col md:grid-cols-2 grid-rows-1 md:grid-rows-2 box-border w-full sm:max-w-md md:max-w-full mx-auto'>
+    <div className='flex flex-wrap box-border w-full space-y-4 sm:space-y-0 sm:max-w-md md:max-w-full mx-auto'>
       {projects.map(({ id, name, imgSrc, techList }) => (
         <ProjectThumbnail
           key={id}
