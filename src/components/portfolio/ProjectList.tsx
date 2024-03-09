@@ -26,21 +26,23 @@ export default function ProjectList({
   }
 
   return (
-    <div className='flex flex-wrap box-border w-full space-y-4 sm:space-y-0 sm:max-w-md md:max-w-full mx-auto'>
-      {projects.map(({ id, name, imgSrc, techList }) => (
-        <ProjectThumbnail
-          key={id}
-          id={id}
-          name={name}
-          img={imgSrc}
-          techList={techList}
-          onSelectClick={handleSelect}
-          onOpenClick={open}
-          onMouseOver={onMouseOver}
-          onMouseOut={onMouseOut}
-        />
-      ))}
-      {selected && (
+    <div>
+      <div className='flex flex-wrap box-border w-full space-y-4 sm:space-y-0 sm:max-w-md md:max-w-full mx-auto'>
+        {projects.map(({ id, name, imgSrc, techList }) => (
+          <ProjectThumbnail
+            key={id}
+            id={id}
+            name={name}
+            img={imgSrc}
+            techList={techList}
+            onSelectClick={handleSelect}
+            onOpenClick={open}
+            onMouseOver={onMouseOver}
+            onMouseOut={onMouseOut}
+          />
+        ))}
+      </div>
+      {selected && modalOpen && (
         <Modal open={modalOpen} onCloseClick={close}>
           <ProjectShow project={selected} />
         </Modal>

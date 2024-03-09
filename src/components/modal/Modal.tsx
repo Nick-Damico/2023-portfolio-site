@@ -1,6 +1,6 @@
 'use client'
 
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import BackDrop from '@/components/modal/BackDrop'
 import CloseBtn from './CloseBtn'
@@ -18,13 +18,21 @@ export default function Modal({
     onCloseClick()
   }
 
+  useEffect(() => {
+    document.body.classList.add('overflow-hidden')
+
+    return () => {
+      document.body.classList.remove('overflow-hidden')
+    }
+  }, [open])
+
   return (
     <AnimatePresence initial={false} mode='wait'>
       {open && (
         <BackDrop key='backDrop' onCloseClick={handleCloseClick}>
           <motion.div
             key='modal'
-            className='p-6 max-h-3/4 h-auto w-11/12 max-w-2xl rounded-md bg-emerald-600 z-50'
+            className='p-4 sm:p-6 h-4/5 sm:h-fit overflow-y-auto w-11/12 max-w-2xl rounded-md bg-emerald-600 z-50'
             onClick={(e) => e.stopPropagation()}
             initial={{ opacity: 0, y: -100 }}
             animate={{
