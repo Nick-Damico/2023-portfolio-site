@@ -27,7 +27,7 @@ export default function Modal({
   }, [open])
 
   return (
-    <AnimatePresence initial={false} mode='wait'>
+    <AnimatePresence>
       {open && (
         <BackDrop key='backDrop' onCloseClick={handleCloseClick}>
           <motion.div
