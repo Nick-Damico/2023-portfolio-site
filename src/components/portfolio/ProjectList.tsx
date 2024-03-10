@@ -5,6 +5,7 @@ import ProjectThumbnail from './ProjectThumbnail'
 import Modal from '@/components/modal/Modal'
 import projects, { Project } from './data'
 import ProjectShow from './ProjectShow'
+import { AnimatePresence } from 'framer-motion'
 
 export default function ProjectList({
   onMouseOver,
@@ -42,11 +43,13 @@ export default function ProjectList({
           />
         ))}
       </div>
-      {selected && modalOpen && (
-        <Modal open={modalOpen} onCloseClick={close}>
-          <ProjectShow project={selected} />
-        </Modal>
-      )}
+      <AnimatePresence mode='wait'>
+        {selected && modalOpen && (
+          <Modal key={`modalProject${selected.id}`} onCloseClick={close}>
+            <ProjectShow key={`project${selected.id}`} project={selected} />
+          </Modal>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
