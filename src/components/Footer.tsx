@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className='w-full p-4 z-50 bg-zinc-900 border-emerald-500 border-t-2'>
+    <footer className='w-full p-4 bg-zinc-900 border-emerald-500 border-t-2'>
       <div className='text-center'>
         <nav className='flex mt-2 space-x-1 justify-center'>
           <a
