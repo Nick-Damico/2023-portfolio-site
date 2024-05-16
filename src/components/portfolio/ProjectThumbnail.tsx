@@ -35,7 +35,7 @@ export default function ProjectItem({
   return (
     <div
       onClick={handleSelectClick}
-      className='flex relative w-full md:w-1/2 h-[200px]  items-center justify-center hover:cursor-pointer bg-red-400 overflow-hidden'
+      className='flex relative w-full md:w-1/2 h-[200px]  items-center justify-center hover:cursor-pointer overflow-hidden'
       onMouseOver={handleHover}
       onMouseOut={handleOnMouseOut}
     >
