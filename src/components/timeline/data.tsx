@@ -10,6 +10,14 @@ export type Event = {
 
 const data: Event[] = [
   {
+    id: '5598b629-6559-4369-9ed9-1946e4f137de',
+    company: 'Tiltworks, Inc',
+    title: 'Contract Software Engineer',
+    startDate: 'Apr 2024',
+    endDate: 'TBD',
+    imgSrc: '/briefcase-solid.svg'
+  },
+  {
     id: '3aef4737-b3b5-43f8-b13b-4285b8869297',
     company: 'Tiltworks, Inc',
     title: 'Software Engineer',
