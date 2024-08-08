@@ -4,7 +4,7 @@ import TimeLineItem from '@/components/timeline/TimeLineItem'
 
 export default function TimeLineList({ data }: { data: Event[] }): ReactNode {
   return (
-    <ol className='space-y-2 border-l-2 border-emerald-400'>
+    <ol className='space-y-2 ml-3 border-l-2 border-emerald-400'>
       {data.map(
         ({
           id,
