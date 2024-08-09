@@ -4,10 +4,12 @@ import Footer from '@/components/Footer'
 
 export default function Landing() {
   return (
-    <div className='box-border flex min-h-screen flex-col items-center justify-between bg-gradient-to-r to-zinc-800 from-stone-950'>
-      <div className='flex flex-col max-w-screen-xl w-full h-100 grow dot-pattern'>
-        <Header />
-        <Home />
+    <div className='bg-gradient-to-r to-zinc-800 from-stone-950'>
+      <div className='flex w-full min-h-screen justify-center dot-pattern'>
+        <div className='flex flex-col w-full max-w-screen-xl'>
+          <Header />
+          <Home />
+        </div>
       </div>
       <Footer />
     </div>
