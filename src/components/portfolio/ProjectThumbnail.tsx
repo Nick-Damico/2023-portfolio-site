@@ -4,6 +4,7 @@ import Image from 'next/image'
 export default function ProjectItem({
   id,
   img,
+  name,
   techList,
   onOpenClick,
   onSelectClick,
@@ -35,11 +36,15 @@ export default function ProjectItem({
   return (
     <div
       onClick={handleSelectClick}
-      className='flex relative w-full md:w-1/2 h-[200px]  items-center justify-center hover:cursor-pointer overflow-hidden'
+      className='p-2 border-box border-2 border-emerald-800'
       onMouseOver={handleHover}
       onMouseOut={handleOnMouseOut}
     >
-      <Image fill src={img} alt='' className='object-cover' />
+      <div className='relative min-h-[180px]'>
+        <Image src={img} fill alt='' className='align-start' />
+      </div>
+      <h3>{name}</h3>
+      <p></p>
     </div>
   )
 }

@@ -41,7 +41,7 @@ export default function Home() {
           <Skill title='Skills' activeSkills={skills} />
         </div>
 
-        <div className='col-span-2 md:col-span-1 z-50'>
+        <div className='col-span-2 z-50'>
           <Portfolio
             title='Portfolio'
             onMouseOver={handleProjectMouseOver}
@@ -49,9 +49,9 @@ export default function Home() {
           />
         </div>
 
-        <div className='col-span-2 md:col-span-1 '>
+        {/* <div className='col-span-2 md:col-span-1 '>
           <Blog title='Blog' />
-        </div>
+        </div> */}
       </div>
     </main>
   )
