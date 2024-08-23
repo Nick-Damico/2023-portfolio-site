@@ -41,7 +41,13 @@ export default function ProjectItem({
       onMouseOut={handleOnMouseOut}
     >
       <div className='relative min-h-[180px]'>
-        <Image src={img} fill alt='' className='align-start' />
+        <Image
+          src={img}
+          height='520'
+          width='300'
+          alt=''
+          className='w-full object-cover'
+        />
       </div>
       <h3>{name}</h3>
       <p></p>
